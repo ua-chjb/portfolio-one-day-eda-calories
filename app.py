@@ -1,7 +1,7 @@
 from dash import Dash
 
 from index import lyt
-# from callbacks import callbacks_baby
+from callbacks import callbacks_baby
 
 app = Dash(__name__)
 
@@ -12,4 +12,4 @@ server = app.server
 callbacks_baby(app)
 
 if __name__ == '__main__':
-    app.run_server(port='8070' )
+    app.run_server(debug=True, port='8070' )
